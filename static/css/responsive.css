@@ -1,0 +1,832 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  text-align: center;
+  /* Source:Transcending CSS, p. 159. */
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  position: relative;
+  /* This is critical. It causes child elements to
+     be positioned relative to the body element, rather
+     than relative to the view screen. */
+  color: #333333;
+  background-color: #fff;
+  text-align: left;
+  vertical-align: top;
+  font-family: Segoe UI, Helvetica, Arial, "Trebuchet MS", Sans-Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* We need to declare these elements as block elements because browsers treat them as 
+    inline elements otherwise. (Source: Gauchat, HTML5 for Masterminds, p.49) */
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption,
+hgroup {
+  display: block;
+}
+
+/* The a.body class defines a link element with a standard body font styles, but
+no color change to indicate "visited" and no hover text decoration */
+a.body:link,
+a.body:visited,
+a.body:active,
+a.body:hover {
+  font-style: normal;
+  font-weight: normal;
+  font-family: Segoe UI, Helvetica, Arial, "Trebuchet MS", Sans-Serif;
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+}
+
+a.body:visited {
+  color: #333333;
+}
+
+a.body:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  word-spacing: normal;
+  text-transform: none;
+  color: blue;
+  font-style: normal;
+  font-family: Segoe UI, Helvetica, Arial, "Trebuchet MS", Sans-Serif;
+  letter-spacing: normal;
+  text-decoration: none;
+  margin: 1rem 0 0.5rem 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+pre,
+form,
+fieldset,
+blockquote,
+input {
+  color: #000000;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Segoe UI, Helvetica, Arial, "Trebuchet MS", Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+
+div,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  font-style: normal;
+  font-weight: normal;
+  font-family: Segoe UI, Helvetica, Arial, "Trebuchet MS", Sans-Serif;
+  text-decoration: none;
+  color: #3333ff;
+}
+
+a:visited {
+  color: #3333ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Note that order matters for anchor pseudo-classes.  Above,
+    hover follows visited, so color changes as you mouse-over, 
+    whether the link has been visited or not. 
+    Source: Briggs et al., p. 98. */
+ol,
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li {
+  list-style-type: square;
+  font-size: 10pt;
+}
+
+ul li li {
+  list-style-type: disc;
+  font-size: 10pt;
+}
+
+ul li li li {
+  list-style-type: circle;
+  font-size: 10pt;
+}
+
+ol li {
+  list-style-type: decimal;
+  font-size: 10pt;
+}
+
+ol ol li {
+  list-style-type: lower-alpha;
+  font-size: 10pt;
+}
+
+ol ol ol li {
+  list-style-type: lower-roman;
+  font-size: 10pt;
+}
+
+ol li ul li {
+  list-style-type: square;
+  font-size: 10pt;
+}
+
+ul,
+ol {
+  list-style-position: outside;
+  margin-left: 1rem;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+}
+
+hr {
+  height: 1px;
+  color: #000000;
+  background-color: #000000;
+  border: solid 0px #000000;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+/* Class to use the honeypot technique for invisible Captcha.  
+   See http://www.ngenworks.com/blog/invisible_captcha_to_prevent_form_spam  */
+.confirmation-field {
+  display: none;
+}
+
+body {
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* All screens: Common styles */
+a.nav-header {
+  text-decoration: none;
+  color: blue;
+}
+
+a.nav-header:hover {
+  color: darkblue;
+}
+
+input#nav {
+  display: none;
+}
+
+nav.header-nav {
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+}
+
+ul.header-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a.header-nav {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+/* Small and medium screens */
+@media (max-width: 850px) {
+  /* Basic */
+  header.nav-header {
+    text-align: center;
+  }
+
+  a.nav-header {
+    font-size: 2.3rem;
+  }
+
+  label#menu {
+    display: none;
+  }
+
+  nav.header-nav {
+    display: block;
+  }
+
+  ul.header-nav {
+    background-color: blue;
+  }
+
+  a.header-nav {
+    font-size: 1.1rem;
+    line-height: 2.333333;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  a.header-nav:hover {
+    background-color: deepskyblue;
+  }
+
+  /* Enhanced */
+  .flexbox.flexwrap nav.header-nav {
+    display: none;
+  }
+  .flexbox.flexwrap input#nav:checked ~ nav.header-nav {
+    display: block;
+  }
+  .flexbox.flexwrap a.nav-header {
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.3333333;
+  }
+  .flexbox.flexwrap header.nav-header {
+    width: auto;
+    background-color: blue;
+    color: white;
+    line-height: 2.333333;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  .flexbox.flexwrap label#menu {
+    display: block;
+    width: auto;
+    background-color: blue;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.333333;
+    text-align: center;
+    cursor: pointer;
+  }
+  .flexbox.flexwrap label#menu:hover {
+    background-color: darkblue;
+  }
+  .flexbox.flexwrap ul.header-nav {
+    background-color: deepskyblue;
+  }
+  .flexbox.flexwrap a.header-nav:hover {
+    background-color: darkblue;
+  }
+  .flexbox.flexwrap input#nav:checked ~ label#menu:hover {
+    background-color: darkblue;
+  }
+}
+
+/* Small screen: Enhanced */
+@media (max-width: 500px) {
+  /* Enhanced */
+  .flexbox.flexwrap div.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexbox.flexwrap header.nav-header {
+    flex: 1 1 auto;
+  }
+  .flexbox.flexwrap label#menu {
+    flex: 0 0 90px;
+  }
+  .flexbox.flexwrap label#menu:before {
+    content: "\2630";
+  }
+  .flexbox.flexwrap input#nav:checked ~ label#menu:before {
+    content: "X";
+  }
+}
+/* Medium screen: */
+@media (min-width: 501px) and (max-width: 850px) {
+  /* Enhanced */
+  .flexbox.flexwrap div.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexbox.flexwrap header.nav-header {
+    flex: 1 1 auto;
+  }
+  .flexbox.flexwrap label#menu {
+    flex: 0 0 140px;
+    font-weight: normal;
+  }
+  .flexbox.flexwrap label#menu:before {
+    content: "Menu \25BC";
+  }
+  .flexbox.flexwrap input#nav:checked ~ label#menu:before {
+    content: "Menu \25B2";
+  }
+}
+/* Large screen: Basic */
+@media (min-width: 851px) {
+  div.header-nav {
+    display: block;
+    background-color: white;
+  }
+
+  header.nav-header {
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+    background-color: white;
+    color: blue;
+    text-align: center;
+  }
+
+  a.nav-header {
+    font-size: 2.8rem;
+    background-color: white;
+  }
+
+  label#menu {
+    display: none;
+  }
+
+  nav.header-nav {
+    display: block;
+    height: 3.5rem;
+  }
+
+  ul.header-nav {
+    background-color: blue;
+    max-width: 1300px;
+  }
+
+  ul.header-nav li {
+    display: inline-block;
+  }
+
+  a.header-nav {
+    font-size: 1.4rem;
+    line-height: 2.9166667;
+    line-height: 2.5;
+    padding: 0 1rem;
+  }
+
+  a.header-nav:hover {
+    background-color: deepskyblue;
+  }
+}
+/* Large screen: Enhanced  */
+@media (min-width: 851px) {
+  /* Menu items equally spaced */
+  .flexbox.flexwrap ul.header-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* One item to the right
+.flexbox.flexwrap { 
+    ul.header-nav { display:flex; }
+    ul.header-nav li:last-child { margin-left:auto; }
+}  */
+}
+/* ul li:last-child { background-color: darkblue; } */
+/* Common basic styles */
+footer {
+  background-color: white;
+}
+
+nav.footer-nav {
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+}
+
+ul.footer-nav {
+  list-style: none;
+  background-color: blue;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+a.footer-nav {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  line-height: 3;
+}
+
+a.footer-nav:hover {
+  background-color: deepskyblue;
+}
+
+div.footer-details {
+  max-width: 1300px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+/* Small screens */
+@media (max-width: 500px) {
+  /* Basic */
+  a.footer-nav {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+/* Medium screens */
+@media (min-width: 501px) and (max-width: 850px) {
+  /* Basic */
+  a.footer-nav {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+}
+/* Large screens */
+@media (min-width: 851px) {
+  /* Basic */
+  a.footer-nav {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+}
+/* Common enhanced styles */
+.flexbox.flexwrap ul.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Large screens: Optional added content
+@media (min-width: 851px)  {   
+    
+    ul.footer-nav li:nth-child(1) a:after { content: " us";} 
+    ul.footer-nav li:nth-child(2) a:after { content: " us";} 
+    ul.footer-nav li:nth-child(3) a:after { content: " policy";} 
+    ul.footer-nav li:nth-child(4) a:after { content: " of use";} 
+}  */
+div.main-info {
+  width: 100%;
+}
+
+div.row1,
+div.row2,
+div.row3 {
+  margin: 1rem auto;
+  max-width: 1300px;
+  max-width: 980px;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+div.row1 {
+  background-color: red;
+}
+
+div.row2 {
+  background-color: green;
+}
+
+div.row3 {
+  background-color: darkblue;
+}
