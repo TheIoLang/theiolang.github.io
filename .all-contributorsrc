@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "DillonB07",
+      "name": "Dillon Barnes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83948303?v=4",
+      "profile": "https://dillonb07.is-a.dev",
+      "contributions": [
+        "code",
+        "content",
+        "design",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "theiolang.github.io",
+  "projectOwner": "TheIoLang",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
