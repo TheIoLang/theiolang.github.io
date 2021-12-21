@@ -1,4 +1,5 @@
 # theiolang.github.io
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m790128399-42998e7d8e187d3a4118684e)](https://stats.uptimerobot.com/8AWVWIXQ9q)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->

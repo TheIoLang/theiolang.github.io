@@ -12,6 +12,7 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
     <div class="header-nav">
@@ -44,37 +45,39 @@
 
     <div class="main-info">
       <div class="row1">
-        <h2>What is IO?</h2>
+        <h2>Information</h2>
         <p>
-          Etiam sed tortor pharetra, bibendum metus sed, maximus ex. Morbi
-          imperdiet neque mauris, eget tempus dolor viverra sed. Aenean ut
-          varius erat. Duis sed nisi ipsum. Aliquam aliquam commodo tellus et
-          eleifend. Fusce viverra ac ipsum vel euismod. Nunc nec sapien sit amet
-          tortor vehicula tristique a eu purus. Donec aliquam augue id odio
-          sollicitudin imperdiet. Integer enim dolor, suscipit ut augue ut,
-          cursus placerat nisl. Aliquam volutpat nisi eu leo rhoncus, ac
-          eleifend arcu aliquam. Sed sollicitudin viverra dolor eget vehicula.
+          Your email address will only be held for a response. We will not send your data to anyone else, even other IO collaborators. 
         </p>
       </div>
       <div class="row2">
-        <h2>Why choose IO?</h2>
-        <p>
-          Aliquam hendrerit enim ac dolor consequat, sed convallis sem
-          venenatis. Integer malesuada, quam sit amet vehicula eleifend, orci
-          libero pulvinar sapien, vitae pellentesque nisi ante eget velit. In
-          ultrices tincidunt orci. Vestibulum ante ipsum primis in faucibus orci
-          luctus et ultrices posuere cubilia curae; Sed est neque, maximus
-          placerat porta laoreet, vestibulum et felis. Aenean congue gravida
-          ipsum in malesuada. Nulla ullamcorper tempor semper. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas. Aenean accumsan dui non turpis interdum, quis auctor
-          ante ullamcorper. Nunc vestibulum ante enim, fringilla lacinia est
-          tincidunt in. Sed et purus quis lacus accumsan molestie vitae
-          fringilla erat. Cras vitae felis sed nulla pretium cursus id tempus
-          orci. Nullam lorem neque, gravida eu est ac, fringilla ultricies
-          tortor. Nunc et velit ut lectus laoreet finibus. Integer hendrerit
-          posuere euismod. Fusce tincidunt dictum sem.
-        </p>
+        <h2>Contact</h2>
+        <form action='https://mailserver.theiolang.repl.co/send' method='POST'>
+            <label for='name'>Name: 
+            <input class='center' type='text' name='name' placeholder='JBYT27' required />
+        </label>
+        <label for='email'>Email: 
+            <input class='center' type='email' name='email' placeholder='name@domain.tld' required/>
+        </label>
+        <label for='subject'>Subject: 
+            <select class='center' name='subject' required>
+                <option disabled>Select One</option>
+                <option value="Question">Question</option>
+                <option value="Suggestion">Suggestion</option>
+                <option value="Report">Report</option> 
+                <option value="Issue">Issue</option> 
+                <option value="Other">Other</option>
+            </select>
+        </label>
+        <label for='message'>Message:
+            <textarea class='center' name='message' required></textarea>
+        </label>
+        <label for='robot'>
+            <div name='robot' class="g-recaptcha center" data-sitekey="6LdtU7sdAAAAAB_HP7h8EkugKQA-C5xvO1800w5N"></div>
+        </label>
+
+        <input id="submit" type="submit" value="Submit" />
+        </form>
       </div>
       <div class="row3">
         <h2>Additional Information</h2>
