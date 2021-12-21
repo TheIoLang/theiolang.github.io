@@ -511,11 +511,11 @@ html {
 /* All screens: Common styles */
 a.nav-header {
   text-decoration: none;
-  color: blue;
+  color: cyan;
 }
 
 a.nav-header:hover {
-  color: darkblue;
+  background-color: darkblue;
 }
 
 input#nav {
@@ -523,7 +523,7 @@ input#nav {
 }
 
 nav.header-nav {
-  background-color: blue;
+  background-color: red;
   width: 100%;
   text-align: center;
 }
@@ -537,7 +537,7 @@ ul.header-nav {
 a.header-nav {
   text-decoration: none;
   display: block;
-  color: white;
+  color: cyan;
 }
 
 /* Small and medium screens */
@@ -560,7 +560,7 @@ a.header-nav {
   }
 
   ul.header-nav {
-    background-color: blue;
+    background-color: red;
   }
 
   a.header-nav {
@@ -571,7 +571,8 @@ a.header-nav {
   }
 
   a.header-nav:hover {
-    background-color: deepskyblue;
+    background-color: cyan;
+    color: red;
   }
 
   /* Enhanced */
@@ -588,8 +589,8 @@ a.header-nav {
   }
   .flexbox.flexwrap header.nav-header {
     width: auto;
-    background-color: blue;
-    color: white;
+    background-color: red;
+    color: cyan;
     line-height: 2.333333;
     text-align: left;
     padding-left: 1.5rem;
@@ -597,25 +598,28 @@ a.header-nav {
   .flexbox.flexwrap label#menu {
     display: block;
     width: auto;
-    background-color: blue;
-    color: white;
+    background-color: red;
+    color: cyan;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 2.333333;
     text-align: center;
     cursor: pointer;
+    transition: 2s;
   }
   .flexbox.flexwrap label#menu:hover {
-    background-color: darkblue;
+    background-color: cyan;
+    color: red;
   }
   .flexbox.flexwrap ul.header-nav {
     background-color: deepskyblue;
   }
   .flexbox.flexwrap a.header-nav:hover {
-    background-color: darkblue;
+    background-color: cyan;
+    color: red;
   }
   .flexbox.flexwrap input#nav:checked ~ label#menu:hover {
-    background-color: darkblue;
+    background-color: red;
   }
 }
 
@@ -671,14 +675,14 @@ a.header-nav {
     display: block;
     padding: 1rem 0;
     width: 100%;
-    background-color: white;
-    color: blue;
+    background-color: red;
+    color: cyan;
     text-align: center;
   }
 
   a.nav-header {
     font-size: 2.8rem;
-    background-color: white;
+    background-color: red;
   }
 
   label#menu {
@@ -691,7 +695,7 @@ a.header-nav {
   }
 
   ul.header-nav {
-    background-color: blue;
+    background-color: red;
     max-width: 1300px;
   }
 
@@ -704,10 +708,12 @@ a.header-nav {
     line-height: 2.9166667;
     line-height: 2.5;
     padding: 0 1rem;
+    transition: 2s;
   }
 
   a.header-nav:hover {
-    background-color: deepskyblue;
+    background-color: cyan;
+    color: red;
   }
 }
 /* Large screen: Enhanced  */
@@ -727,21 +733,23 @@ a.header-nav {
 /* ul li:last-child { background-color: darkblue; } */
 /* Common basic styles */
 footer {
-  background-color: white;
+  background-color: red;
 }
 
 nav.footer-nav {
-  background-color: blue;
+  background-color: red;
   width: 100%;
   text-align: center;
 }
 
 ul.footer-nav {
   list-style: none;
-  background-color: blue;
+  background-color: red;
   margin: 0 auto;
   padding: 0;
   max-width: 1300px;
+  color: cyan;
+  transition: 2s;
 }
 
 .footer-nav li {
@@ -756,7 +764,8 @@ a.footer-nav {
 }
 
 a.footer-nav:hover {
-  background-color: deepskyblue;
+  background-color: cyan;
+  color: red;
 }
 
 div.footer-details {

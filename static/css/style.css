@@ -1,14 +1,3 @@
-nav.header-nav, ul.header-nav, a.header-nav, nav.footer-nav, ul.footer-nav, a.footer-nav {
-    background-color: red;
-    color: cyan;
-}
-
-a.header-nav:hover, a.footer-nav:hover {
-    background-color: cyan;
-    color: red;
-    transition: 2s;
-}
-
 div.main-info {
     background-color: black;
     border-radius: 10px;
